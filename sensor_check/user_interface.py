@@ -6,9 +6,9 @@ def temperature_view(sensor):
     log.temperature_logger(data)
     return data
 
-def preassure_view(sensor):
-    data = prov.get_preassure(sensor)
-    log.preassure_logger(data)
+def pressure_view(sensor):
+    data = prov.get_pressure(sensor)
+    log.pressure_logger(data)
     return data
 
 def wind_speed_view(sensor):

@@ -6,10 +6,10 @@ def temperature_logger(data):
         file.write('{};temperature;{}\n'
                     .format(time, data))
 
-def preassure_logger(data):
+def pressure_logger(data):
     time = dt.now().strftime('%H:%M')
     with open('log.csv', 'a') as file:
-        file.write('{};preassure;{}\n'
+        file.write('{};pressure;{}\n'
                     .format(time, data))
 
 
